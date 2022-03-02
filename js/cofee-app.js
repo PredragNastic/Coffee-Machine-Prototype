@@ -1,4 +1,4 @@
-const printsMessage = (id, message) => document.getElementById(id).innerText = message; //u zagradama je jer ima vise oid jednog parametra
+const printsMessage = (id, message) => document.getElementById(id).innerText = message;
 const resetsMachineWorkState = value => coffeeMachine.poring = value;
 
 let coffeeMachine = {
@@ -31,7 +31,7 @@ let coffeeMachine = {
     },
     emptyWater: function (water) {
         if (this.water < water)
-            return  printsMessage('message', 'out of water');
+            return printsMessage('message', 'out of water');
         this.water = this.water - water;
         coffeeMachine.waterSattus();
         printsMessage('message', 'Poring Water');
